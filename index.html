@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<meta name="description" content="">
+
+	<link rel="stylesheet" href="/assets/css/modesto.min.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👍</text></svg>">
+  <script src="https://cdn.skypack.dev/@hotwired/turbo" type="module"></script>
+
+	<style>
+		.contato {
+			background-color: lightskyblue;
+			padding: 1em 1em .45em 1em;
+		}
+	</style>
+</head>
+<body>
+	<h1>Home</h1>
+
+	<menu>
+		<ul>
+			<li>👉 <a href="/">Home</a></li>
+			<li><a href="/sobre/index.html">Sobre Nós</a></li>
+			<li><a href="/contato/index.html">Contato</a></li>
+		</ul>
+	</menu>
+
+	<div>
+		<p>
+			Esse é uma prova de conceito 100% HTML muito simples da implementação do <a href="https://turbo.hotwire.dev"> turbo / hotwire</a>.
+		</p>
+	</div>
+
+	<hr>
+	<h4>turbo-frame</h4>
+	<div class="contato">
+		<turbo-frame id="contato" src="/contato/index.html">
+			<p>
+				💌 <a href="/contato/index.html">Entre em contato</a>
+			</p>
+		</turbo-frame>
+	</div>
+	<hr>
+	<p>
+		Projeto disponível em: http://github.com/nalmeida/bla
+	</p>
+	<script src="/assets/js/main.js"></script>
+</body>
+</html>

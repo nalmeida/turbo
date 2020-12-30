@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contato</title>
+	<meta name="description" content="">
+
+	<link rel="stylesheet" href="/assets/css/modesto.min.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👍</text></svg>">
+	<script src="https://cdn.skypack.dev/@hotwired/turbo" type="module"></script>
+</head>
+<body>
+	<h1>Contato</h1>
+
+	<menu>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/sobre/index.html">Sobre Nós</a></li>
+			<li>👉 <a href="/contato/index.html">Contato</a></li>
+		</ul>
+	</menu>
+
+	<div>
+		<turbo-frame id="contato">
+			<h3>Mensagem</h3>
+			<form action="/contato/sucesso.html" method="GET">
+				<label for="mensagem">Mensagem: </label>
+				<input type="text" name="mensagem" id="mensagem" required>
+				<br>
+				<input type="submit" name="enviar" id="enviar" value="Enviar">
+			</form>
+		</turbo-frame>
+	</div>
+
+	<script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.sass-cache
+.sass-cache/*
+*.scssc
+*.log
+.htaccess
+node_modules/
+public/
+.DS_Store
+TODO.md
